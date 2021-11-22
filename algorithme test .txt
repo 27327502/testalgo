@@ -1,0 +1,32 @@
+Algorithm test-algorithm
+var
+k,i,j:integer
+begin
+repeat 
+  write('write a sentence');
+  read (ch);
+until (ch[1]#' ')and (ch(length(ch))#' '); 
+for i=1 to length[ch] do
+  if ch[i]='  'then;
+  delete (pos('  '),1);
+  end if;
+end for;
+ch:=ch+'.';
+words:=0;
+for j=1 to length(ch) do
+  if ch[j]=' ' then ;
+  words:= words + 1 ;
+  end if;
+end for;
+vowels:=0;
+for k:=1 to length(ch) do 
+  if ch[k] in [majus('e','a','u','y','i','o')] then;
+  vowels:= vowels + 1 ;
+  end if;
+end for;
+write('the sentence contains',words,'words ,',vowels,'vowels and The length of the sentence is',length(ch),);
+end.
+
+    
+  
+  
